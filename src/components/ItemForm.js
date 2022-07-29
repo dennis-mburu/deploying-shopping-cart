@@ -11,7 +11,9 @@ function ItemForm({onAddItem}) {
       category: category,
       isInCart: false
     };
-    fetch("http://localhost:4000/items", {
+    // fetch("http://localhost:4000/items", {
+
+    fetch("https://secure-river-20229.herokuapp.com/items", {
       method:"POST",
       headers: {
         "Content-Type":"application/json"

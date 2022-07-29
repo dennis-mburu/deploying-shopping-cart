@@ -10,7 +10,10 @@ function ShoppingList() {
 
   //adding useEffect Hook
   useEffect(() => {
-    fetch("http://localhost:4000/items")
+    // fetch("http://localhost:4000/items")
+
+  fetch("https://secure-river-20229.herokuapp.com/items")
+
     .then((res) => res.json())
     .then((items) => {
       setItems(items)
